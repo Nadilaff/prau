@@ -38,7 +38,7 @@ $(document).ready(function() {
     var carousel = $("#carouselExample");
     var carouselInner = carousel.find(".carousel-inner");
     var cardWidth = $(".carousel-item").outerWidth(true);
-    var maxVisibleCards = 4; // Maksimum jumlah card yang dapat ditampilkan secara bersamaan
+    var maxVisibleCards = 3; // Maksimum jumlah card yang dapat ditampilkan secara bersamaan
     var scrollPosition = 0;
     var totalCards = carouselInner.find(".carousel-item").length;
     var shiftCount = 0; // Jumlah pergeseran yang telah dilakukan
