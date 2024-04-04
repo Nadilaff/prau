@@ -68,7 +68,11 @@
 
 /** CAROUSEL BERANDA **/
 .carousel-container {
-    margin-top: -100px;
+    transform: translateY(-115px);
+    -webkit-transform: translateY(-115px);
+    -moz-transform: translateY(-115px);
+    -ms-transform: translateY(-115px);
+    -o-transform: translateY(-115px);
 }
 
 .img-wrapper {
@@ -134,7 +138,6 @@ img {
     height: 6vh;
     border-radius: 50%;
     top: 50%;
-    transform: translateY(-50%);
 }
 
 .card-link {

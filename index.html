@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/owl.theme.default.min.css">
+    <style>
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .owl-next {
+            right: 1rem;
+        }
+
+        .owl-prev {
+            left: 1rem;
+        }
+
+        .owl-prev,
+        .owl-next {
+            background-color: #128C7E !important;
+            height: 40px;
+            width: 40px;
+            border-radius: 20px !important;
+            opacity: .5;
+            color: white;
+            font-size: 40px;
+            line-height: .8;
+        }
+    </style>
 </head>
+
 <body>
     <!-- NAVBAR -->
     <div class="container-navbar p-4">
@@ -30,9 +62,6 @@
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item">
                                 <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Beranda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="profilGunung.html">Profil Gunung</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -72,112 +101,104 @@
     <header class="hero-beranda">
         <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
             <h1>Eksplorasi Puncak Gunung Prau</h1>
-            <p>Jangan lewatkan kesempatan untuk merasakan keajaiban alam yang memukau di Gunung Prau! Bergabunglah dengan kami dan
-            buatlah kenangan tak terlupakan serta mengesankan. Saksikan keindahan sunrise terindah seasia tenggara yang hanya bisa
-            Anda temui di puncak Gunung Prau!</p>
-            <button type="button" class="btn-booking" onclick="window.location.href='booking.html'">Booking Sekarang</button>
+            <p>Jangan lewatkan kesempatan untuk merasakan keajaiban alam yang memukau di Gunung Prau! Bergabunglah
+                dengan kami dan
+                buatlah kenangan tak terlupakan serta mengesankan. Saksikan keindahan sunrise terindah seasia tenggara
+                yang hanya bisa
+                Anda temui di puncak Gunung Prau!</p>
+            <button type="button" class="btn-booking" onclick="window.location.href='booking.html'">Booking
+                Sekarang</button>
         </div>
     </header>
     <!--END HERO SECTION-->
 
 
     <!--CAROUSEL-->
-    <div class="carousel-container pb-5">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="assets/images/BcPatakbanteng.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Basecamp Patak Banteng</h5>
-                            <p class="card-text">
-                                Jl. Dieng No.KM. 24, Patakbanteng, Kec. Kejajar, Kabupaten Wonosobo, Jawa Tengah 
-                                <a href="patakBanteng.html" class="card-link">selengkapnya...</a>
-                            </p>
-                        </div>
-                    </div>
+    <div class="owl-carousel owl-theme" style="transform: translateY(-115px);">
+        <div class="item">
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="assets/images/BcPatakbanteng.png" class="card-img-top" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="assets/images/BcDieng.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Basecamp Dieng</h5>
-                            <p class="card-text">
-                                Jl. Raya Wonosobo, Batur - Dieng Jl. Dieng Km. 26, Kec. Kejajar, Kabupaten Wonosobo, Jawa Tengah 
-                                <a href="dieng.html" class="card-link">selengkapnya...</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="assets/images/BcDwarawati.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Basecamp Dieng Kulon</h5>
-                            <p class="card-text">
-                                Jl. Raya Wonosobo, Batur-Dieng Jl. Dieng Km.26, Kec. Kejajar, Kab. Wonosobo, Jawa Tengah 
-                                <a href="dwarawati.html" class="card-link">selengkapnya...</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="assets/images/BcKalilembu.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Basecamp Kalilembu</h5>
-                            <p class="card-text">
-                                Kalilembu, Kec. Kejajar, Kab. Wonosobo, Jawa Tengah 
-                                <a href="kalilembu.html" class="card-link">selengkapnya...</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="assets/images/BcIgirmranak.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Basecamp Igirmranak</h5>
-                            <p class="card-text">
-                                Igirmranak, Kec. Kejajar, Kabupaten Wonosobo, Jawa Tengah 
-                                <a href="igirmranak.html" class="card-link">selengkapnya...</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="assets/images/BcWates.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Basecamp Wates</h5>
-                            <p class="card-text">
-                                Jl. Candiroto - Kejajar, KM. 11, Gejungan, Wates, Kec. Wonoboyo, Kabupaten Temanggung, Jawa Tengah 
-                                <a href="wates.html" class="card-link">selengkapnya...</a>
-                            </p>
-                        </div>
-                    </div>
+                <div class="card-body">
+                    <h5 class="card-title">Basecamp Patak Banteng</h5>
+                    <p class="card-text">
+                        Jl. Dieng No.KM. 24, Patakbanteng, Kec. Kejajar, Kabupaten Wonosobo, Jawa Tengah
+                        <a href="patakBanteng.html" class="card-link">selengkapnya...</a>
+                    </p>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="assets/images/BcDieng.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Basecamp Dieng</h5>
+                    <p class="card-text">
+                        Jl. Raya Wonosobo, Batur - Dieng Jl. Dieng Km. 26, Kec. Kejajar, Kabupaten Wonosobo, Jawa Tengah
+                        <a href="dieng.html" class="card-link">selengkapnya...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="assets/images/BcDwarawati.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Basecamp Dieng Kulon</h5>
+                    <p class="card-text">
+                        Jl. Raya Wonosobo, Batur-Dieng Jl. Dieng Km.26, Kec. Kejajar, Kab. Wonosobo, Jawa Tengah
+                        <a href="dwarawati.html" class="card-link">selengkapnya...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="assets/images/BcKalilembu.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Basecamp Kalilembu</h5>
+                    <p class="card-text">
+                        Kalilembu, Kec. Kejajar, Kab. Wonosobo, Jawa Tengah
+                        <a href="kalilembu.html" class="card-link">selengkapnya...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="assets/images/BcIgirmranak.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Basecamp Igirmranak</h5>
+                    <p class="card-text">
+                        Igirmranak, Kec. Kejajar, Kabupaten Wonosobo, Jawa Tengah
+                        <a href="igirmranak.html" class="card-link">selengkapnya...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="assets/images/BcWates.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Basecamp Wates</h5>
+                    <p class="card-text">
+                        Jl. Candiroto - Kejajar, KM. 11, Gejungan, Wates, Kec. Wonoboyo, Kabupaten Temanggung, Jawa
+                        Tengah
+                        <a href="wates.html" class="card-link">selengkapnya...</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     <!--END CAROUSEL-->
@@ -190,10 +211,13 @@
                 <div class="artikel-beranda col-lg-6 col-md-7 col-sm-12 offset-md-1 offset-lg-2">
                     <h1>Selamat Datang Di PuncakPendaki!</h1>
                     <p>
-                    Kami adalah platform booking online yang menyediakan layanan untuk pendakian di Gunung Prau. Temukan
-                    petualangan mendebarkan dan nikmati keindahan alam Gunung Prau dengan mudah melalui platform kami.
-                    Tujuan kami adalah memberikan pelayanan yang aman, mudah, dan tak terlupakan bagi para pecinta alam yang
-                    ingin menjelajahi kecantikan Gunung Prau.
+                        Kami adalah platform booking online yang menyediakan layanan untuk pendakian di Gunung Prau.
+                        Temukan
+                        petualangan mendebarkan dan nikmati keindahan alam Gunung Prau dengan mudah melalui platform
+                        kami.
+                        Tujuan kami adalah memberikan pelayanan yang aman, mudah, dan tak terlupakan bagi para pecinta
+                        alam yang
+                        ingin menjelajahi kecantikan Gunung Prau.
                     </p>
                 </div>
                 <div class="hero-puncakpendaki col-lg-4 col-md-4 col-sm-12">
@@ -254,17 +278,21 @@
                 <div class="col-lg-5 text-profil">
                     <p>Gunung Prau adalah sebuah gunung yang terletak di Jawa Tengah,
                         Indonesia, dengan ketinggian sekitar 2.565 meter di atas
-                        permukaan laut. Dikenal sebagai salah satu destinasi pendakian populer di Pulau Jawa, Gunung Prau
+                        permukaan laut. Dikenal sebagai salah satu destinasi pendakian populer di Pulau Jawa, Gunung
+                        Prau
                         menawarkan pemandangan
                         alam yang memukau dari puncaknya, termasuk panorama lembah Dieng yang hijau dan luas serta
                         kawah-kawah vulkanik yang
-                        menakjubkan. Pendakian menuju puncaknya relatif mudah dan cocok untuk para pendaki pemula, dengan
+                        menakjubkan. Pendakian menuju puncaknya relatif mudah dan cocok untuk para pendaki pemula,
+                        dengan
                         jalur pendakian utama
-                        melalui Desa Dieng atau Desa Wonosobo. Waktu pendakiannya juga sangkat singkat yaitu hanya sekitar
+                        melalui Desa Dieng atau Desa Wonosobo. Waktu pendakiannya juga sangkat singkat yaitu hanya
+                        sekitar
                         3-4 jam saja dengan
                         trek yang tidak terlalu sulit. Terdapat enam basecamp resmi sebagai titik awal untuk melakukan
                         pendakian ke Gunung Prau,
-                        yaitu basecamp Dieng, Patak Banteng, Kalilembu, Dwarawati, Wates, dan Igirmranak. Adapun basecamp
+                        yaitu basecamp Dieng, Patak Banteng, Kalilembu, Dwarawati, Wates, dan Igirmranak. Adapun
+                        basecamp
                         paling populer untuk
                         mendaki Gunung Prau adalah melalui Patak Banteng.</p>
                 </div>
@@ -275,23 +303,24 @@
 
 
     <!-- ULASAN APLIKASI -->
-    <div class="tittle-text" style="text-align: center;">
+    <div class="tittle-text" style="text-align: center; margin-top: 100px; margin-bottom: 50px">
         <h1>Ulasan Website</h1>
     </div>
-    <div class="owl-carousel owl-theme">
-        <div class="item"
-            style="background-color: #128C7E; border-radius: 25px; justify-content: center; align-items: center; display: flex;">
-            <div class="image-content d-flex justify-content-center align-items-center text-center" style="padding: 15px;">
-                <div class="card-image"
-                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(17%);">
+    <div class="owl-carousel owl-theme" style="margin-bottom: 150px;">
+        <div class="item" style="background-color: #128C7E; border-radius: 25px;">
+            <div class="image-content" style="padding: 15px;">
+                <div class="card-image d-flex justify-content-center align-items-center"
+                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(70%);">
                     <img src="./assets/images/kucing.jpg" alt=""
                         style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #128C7E;">
                 </div>
                 <div class="card-content">
-                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">Nadila
+                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">
+                        Nadila
                     </h2>
                     <p class="tgl-ulas" style="color: white; font-size: 12px; text-align: center;">12 Januari 2024</p>
-                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor sit
+                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor
+                        sit
                         amet consectetur adipisicing elit. Dolores assumenda eligendi
                         voluptates adipisci facere eaque cumque impedit officiis aperiam illum expedita porro pariatur
                         aliquid
@@ -299,19 +328,20 @@
                 </div>
             </div>
         </div>
-        <div class="item"
-            style="background-color: #128C7E; border-radius: 25px; justify-content: center; align-items: center; display: flex;">
-            <div class="image-content d-flex justify-content-center align-items-center text-center" style="padding: 15px;">
-                <div class="card-image"
-                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(17%);">
+        <div class="item" style="background-color: #128C7E; border-radius: 25px;">
+            <div class="image-content" style="padding: 15px;">
+                <div class="card-image d-flex justify-content-center align-items-center"
+                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(70%);">
                     <img src="./assets/images/kucing.jpg" alt=""
                         style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #128C7E;">
                 </div>
                 <div class="card-content">
-                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">Nadila
+                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">
+                        Nadila
                     </h2>
                     <p class="tgl-ulas" style="color: white; font-size: 12px; text-align: center;">12 Januari 2024</p>
-                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor sit
+                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor
+                        sit
                         amet consectetur adipisicing elit. Dolores assumenda eligendi
                         voluptates adipisci facere eaque cumque impedit officiis aperiam illum expedita porro pariatur
                         aliquid
@@ -319,19 +349,20 @@
                 </div>
             </div>
         </div>
-        <div class="item"
-            style="background-color: #128C7E; border-radius: 25px; justify-content: center; align-items: center; display: flex;">
-            <div class="image-content d-flex justify-content-center align-items-center text-center" style="padding: 15px;">
-                <div class="card-image"
-                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(17%);">
+        <div class="item" style="background-color: #128C7E; border-radius: 25px;">
+            <div class="image-content" style="padding: 15px;">
+                <div class="card-image d-flex justify-content-center align-items-center"
+                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(70%);">
                     <img src="./assets/images/kucing.jpg" alt=""
                         style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #128C7E;">
                 </div>
                 <div class="card-content">
-                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">Nadila
+                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">
+                        Nadila
                     </h2>
                     <p class="tgl-ulas" style="color: white; font-size: 12px; text-align: center;">12 Januari 2024</p>
-                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor sit
+                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor
+                        sit
                         amet consectetur adipisicing elit. Dolores assumenda eligendi
                         voluptates adipisci facere eaque cumque impedit officiis aperiam illum expedita porro pariatur
                         aliquid
@@ -339,19 +370,20 @@
                 </div>
             </div>
         </div>
-        <div class="item"
-            style="background-color: #128C7E; border-radius: 25px; justify-content: center; align-items: center; display: flex;">
-            <div class="image-content d-flex justify-content-center align-items-center text-center" style="padding: 15px;">
-                <div class="card-image"
-                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(17%);">
+        <div class="item" style="background-color: #128C7E; border-radius: 25px;">
+            <div class="image-content" style="padding: 15px;">
+                <div class="card-image d-flex justify-content-center align-items-center"
+                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(70%);">
                     <img src="./assets/images/kucing.jpg" alt=""
                         style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #128C7E;">
                 </div>
                 <div class="card-content">
-                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">Nadila
+                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">
+                        Nadila
                     </h2>
                     <p class="tgl-ulas" style="color: white; font-size: 12px; text-align: center;">12 Januari 2024</p>
-                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor sit
+                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor
+                        sit
                         amet consectetur adipisicing elit. Dolores assumenda eligendi
                         voluptates adipisci facere eaque cumque impedit officiis aperiam illum expedita porro pariatur
                         aliquid
@@ -359,19 +391,20 @@
                 </div>
             </div>
         </div>
-        <div class="item"
-            style="background-color: #128C7E; border-radius: 25px; justify-content: center; align-items: center; display: flex;">
-            <div class="image-content d-flex justify-content-center align-items-center text-center" style="padding: 15px;">
-                <div class="card-image"
-                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(17%);">
+        <div class="item" style="background-color: #128C7E; border-radius: 25px;">
+            <div class="image-content" style="padding: 15px;">
+                <div class="card-image d-flex justify-content-center align-items-center"
+                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(70%);">
                     <img src="./assets/images/kucing.jpg" alt=""
                         style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #128C7E;">
                 </div>
                 <div class="card-content">
-                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">Nadila
+                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">
+                        Nadila
                     </h2>
                     <p class="tgl-ulas" style="color: white; font-size: 12px; text-align: center;">12 Januari 2024</p>
-                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor sit
+                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor
+                        sit
                         amet consectetur adipisicing elit. Dolores assumenda eligendi
                         voluptates adipisci facere eaque cumque impedit officiis aperiam illum expedita porro pariatur
                         aliquid
@@ -379,19 +412,20 @@
                 </div>
             </div>
         </div>
-        <div class="item"
-            style="background-color: #128C7E; border-radius: 25px; justify-content: center; align-items: center; display: flex;">
-            <div class="image-content d-flex justify-content-center align-items-center text-center" style="padding: 15px;">
-                <div class="card-image"
-                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(17%);">
+        <div class="item" style="background-color: #128C7E; border-radius: 25px;">
+            <div class="image-content" style="padding: 15px;">
+                <div class="card-image d-flex justify-content-center align-items-center"
+                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(70%);">
                     <img src="./assets/images/kucing.jpg" alt=""
                         style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #128C7E;">
                 </div>
                 <div class="card-content">
-                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">Nadila
+                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">
+                        Nadila
                     </h2>
                     <p class="tgl-ulas" style="color: white; font-size: 12px; text-align: center;">12 Januari 2024</p>
-                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor sit
+                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor
+                        sit
                         amet consectetur adipisicing elit. Dolores assumenda eligendi
                         voluptates adipisci facere eaque cumque impedit officiis aperiam illum expedita porro pariatur
                         aliquid
@@ -399,19 +433,20 @@
                 </div>
             </div>
         </div>
-        <div class="item"
-            style="background-color: #128C7E; border-radius: 25px; justify-content: center; align-items: center; display: flex;">
-            <div class="image-content d-flex justify-content-center align-items-center text-center" style="padding: 15px;">
-                <div class="card-image"
-                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(17%);">
+        <div class="item" style="background-color: #128C7E; border-radius: 25px;">
+            <div class="image-content" style="padding: 15px;">
+                <div class="card-image d-flex justify-content-center align-items-center"
+                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(70%);">
                     <img src="./assets/images/kucing.jpg" alt=""
                         style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #128C7E;">
                 </div>
                 <div class="card-content">
-                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">Nadila
+                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">
+                        Nadila
                     </h2>
                     <p class="tgl-ulas" style="color: white; font-size: 12px; text-align: center;">12 Januari 2024</p>
-                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor sit
+                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor
+                        sit
                         amet consectetur adipisicing elit. Dolores assumenda eligendi
                         voluptates adipisci facere eaque cumque impedit officiis aperiam illum expedita porro pariatur
                         aliquid
@@ -419,19 +454,20 @@
                 </div>
             </div>
         </div>
-        <div class="item"
-            style="background-color: #128C7E; border-radius: 25px; justify-content: center; align-items: center; display: flex;">
-            <div class="image-content d-flex justify-content-center align-items-center text-center" style="padding: 15px;">
-                <div class="card-image"
-                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(17%);">
+        <div class="item" style="background-color: #128C7E; border-radius: 25px;">
+            <div class="image-content" style="padding: 15px;">
+                <div class="card-image d-flex justify-content-center align-items-center"
+                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(70%);">
                     <img src="./assets/images/kucing.jpg" alt=""
                         style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #128C7E;">
                 </div>
                 <div class="card-content">
-                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">Nadila
+                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">
+                        Nadila
                     </h2>
                     <p class="tgl-ulas" style="color: white; font-size: 12px; text-align: center;">12 Januari 2024</p>
-                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor sit
+                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor
+                        sit
                         amet consectetur adipisicing elit. Dolores assumenda eligendi
                         voluptates adipisci facere eaque cumque impedit officiis aperiam illum expedita porro pariatur
                         aliquid
@@ -439,19 +475,20 @@
                 </div>
             </div>
         </div>
-        <div class="item"
-            style="background-color: #128C7E; border-radius: 25px; justify-content: center; align-items: center; display: flex;">
-            <div class="image-content d-flex justify-content-center align-items-center text-center" style="padding: 15px;">
-                <div class="card-image"
-                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(17%);">
+        <div class="item" style="background-color: #128C7E; border-radius: 25px;">
+            <div class="image-content" style="padding: 15px;">
+                <div class="card-image d-flex justify-content-center align-items-center"
+                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(70%);">
                     <img src="./assets/images/kucing.jpg" alt=""
                         style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #128C7E;">
                 </div>
                 <div class="card-content">
-                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">Nadila
+                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">
+                        Nadila
                     </h2>
                     <p class="tgl-ulas" style="color: white; font-size: 12px; text-align: center;">12 Januari 2024</p>
-                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor sit
+                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor
+                        sit
                         amet consectetur adipisicing elit. Dolores assumenda eligendi
                         voluptates adipisci facere eaque cumque impedit officiis aperiam illum expedita porro pariatur
                         aliquid
@@ -459,19 +496,20 @@
                 </div>
             </div>
         </div>
-        <div class="item"
-            style="background-color: #128C7E; border-radius: 25px; justify-content: center; align-items: center; display: flex;">
-            <div class="image-content d-flex justify-content-center align-items-center text-center" style="padding: 15px;">
-                <div class="card-image"
-                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(17%);">
+        <div class="item" style="background-color: #128C7E; border-radius: 25px;">
+            <div class="image-content" style="padding: 15px;">
+                <div class="card-image d-flex justify-content-center align-items-center"
+                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(70%);">
                     <img src="./assets/images/kucing.jpg" alt=""
                         style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #128C7E;">
                 </div>
                 <div class="card-content">
-                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">Nadila
+                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">
+                        Nadila
                     </h2>
                     <p class="tgl-ulas" style="color: white; font-size: 12px; text-align: center;">12 Januari 2024</p>
-                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor sit
+                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor
+                        sit
                         amet consectetur adipisicing elit. Dolores assumenda eligendi
                         voluptates adipisci facere eaque cumque impedit officiis aperiam illum expedita porro pariatur
                         aliquid
@@ -479,19 +517,20 @@
                 </div>
             </div>
         </div>
-        <div class="item"
-            style="background-color: #128C7E; border-radius: 25px; justify-content: center; align-items: center; display: flex;">
-            <div class="image-content d-flex justify-content-center align-items-center text-center" style="padding: 15px;">
-                <div class="card-image"
-                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(17%);">
+        <div class="item" style="background-color: #128C7E; border-radius: 25px;">
+            <div class="image-content" style="padding: 15px;">
+                <div class="card-image d-flex justify-content-center align-items-center"
+                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(70%);">
                     <img src="./assets/images/kucing.jpg" alt=""
                         style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #128C7E;">
                 </div>
                 <div class="card-content">
-                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">Nadila
+                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">
+                        Nadila
                     </h2>
                     <p class="tgl-ulas" style="color: white; font-size: 12px; text-align: center;">12 Januari 2024</p>
-                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor sit
+                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor
+                        sit
                         amet consectetur adipisicing elit. Dolores assumenda eligendi
                         voluptates adipisci facere eaque cumque impedit officiis aperiam illum expedita porro pariatur
                         aliquid
@@ -499,19 +538,20 @@
                 </div>
             </div>
         </div>
-        <div class="item"
-            style="background-color: #128C7E; border-radius: 25px; justify-content: center; align-items: center; display: flex;">
-            <div class="image-content d-flex justify-content-center align-items-center text-center" style="padding: 15px;">
-                <div class="card-image"
-                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(17%);">
+        <div class="item" style="background-color: #128C7E; border-radius: 25px;">
+            <div class="image-content" style="padding: 15px;">
+                <div class="card-image d-flex justify-content-center align-items-center"
+                    style="position: relative; height: 150px; width: 150px; border-radius: 50%; transform: translateX(70%);">
                     <img src="./assets/images/kucing.jpg" alt=""
                         style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #128C7E;">
                 </div>
                 <div class="card-content">
-                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">Nadila
+                    <h2 class="username" style="color: white; font-size: 20px; font-weight: 500; text-align: center;">
+                        Nadila
                     </h2>
                     <p class="tgl-ulas" style="color: white; font-size: 12px; text-align: center;">12 Januari 2024</p>
-                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor sit
+                    <p class="description" style="color: white; font-size: 16px; text-align: justify;">Lorem ipsum dolor
+                        sit
                         amet consectetur adipisicing elit. Dolores assumenda eligendi
                         voluptates adipisci facere eaque cumque impedit officiis aperiam illum expedita porro pariatur
                         aliquid
@@ -562,7 +602,8 @@
     <footer>
         <div class="container-fluid container-footer pt-4">
             <div class="container">
-                <a class="navbar-brand me-auto" style="margin-right: auto; margin-left: auto; margin-bottom: 10px;">PuncakPendaki</a>
+                <a class="navbar-brand me-auto"
+                    style="margin-right: auto; margin-left: auto; margin-bottom: 10px;">PuncakPendaki</a>
                 <div class="icons">
                     <a href=" "><i class="fa-brands fa-instagram"></i></a>
                     <a href=" "><i class="fa-brands fa-facebook-f"></i></a>
@@ -571,8 +612,10 @@
                 </div>
                 <div class="footerNav">
                     <p>
-                        Dapatkan informasi pendaftaran, perkiraan cuaca, syarat, dan persiapan pendakian gunung di Indonesia.
-                        Situs ini ditujukan untuk kita para pendaki. Dengan mendaftar, Anda memahami dan menyetujui jika data Anda
+                        Dapatkan informasi pendaftaran, perkiraan cuaca, syarat, dan persiapan pendakian gunung di
+                        Indonesia.
+                        Situs ini ditujukan untuk kita para pendaki. Dengan mendaftar, Anda memahami dan menyetujui jika
+                        data Anda
                         akan dikumpulkan dan digunakan sesuai dengan kebijakan kami dan ketentuan penggunaan.
                     </p>
                 </div>
@@ -586,11 +629,32 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.min.js"></script>
     <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        console.log(0)
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            navText: ["<next>", "prev"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
 </body>
+
 </html>
